@@ -1,90 +1,160 @@
-
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
 body {
+    background-color: #24252A;
     text-align: center;
-    background-image: url(/img/49.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
 }
 header {
     font-family: 'Belanosima', sans-serif;
-    padding: 2rem;
+    padding: 30px 10%;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
-}
-.span-header {
-    font-size: 1.5rem;
-}
-#nav-principal {
-    font-family: 'Belanosima', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    background-color: black;
-    margin: 0 auto;
-    width: 23rem;
-    font-size: 1.5rem;
+    height: 85vh;
 }
-#nav-principal a {
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 10px;
-}
-#nav-principal a:hover {
-    background-color: yellow;
-    color: black;
-}
-.rounding-corners {
-    border-radius: 10px;
-}
-#container-profile {
-    padding: 1rem;
-    width: 50%;
-    margin: 1rem auto;
-    background-image: url(https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=740&t=st=1687833614~exp=1687834214~hmac=8b4bd16bb3db5a955d654b330cef5c71fbe866df950ed17ac2f90ee5f1cd6209);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid black;
-    font-size: 1.3rem;
-    height: 22rem;
-}
-#container-info {
-    padding: 0rem;
-    width: 70%;
-    margin: 0 auto 2rem auto;
-    background-image: url(/img/5143237.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid black;
-    font-size: 1.3rem;
-    height: 25rem;
-}
-.logo {
-    max-width: 3rem;
-    max-height: 3rem;
-}
-#manu-pic {
-    height: 12rem;
-    width: 12rem;
-    border-radius: 50%;
-}
-.tools {
-    max-width: 5rem;
-}
-#projects {
+.titulo__header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    font-size: 4rem;
+}
+.titulo__header p {
+    margin-bottom: 0;
+}
+.text-header {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border-radius: 5000px;
+}
+
+.nav__links {
+    padding: 1rem;
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
 
 }
-#projects img {
-    width: 10rem;
-    height: 10rem;
+.nav__links li a:hover {
+    text-decoration: underline;
+    
 }
-#project-1 {
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+#manu-pic {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    padding: 20px 20px;
+}
+#portfolio {
+    background-color:antiquewhite;
+    text-align: center;
+    height: 60vh;
+    width: 90%;
+    margin: 20px auto;
+}
+#projects {
+    margin: 12px auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#projects img {
+    object-fit:contain;
+    height: 10rem;
+    width: 20rem;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+#projects a {
+    padding: 10px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#projects a:hover {
+    background-color:rgba(0,136,169,0.8);
+    color: white;
+}
+
+h2 {
+   font-size: 2rem;
+   background-color: white;
+   padding: 1rem;
+   width: 60%;
+   margin: 0 auto;
+   border-radius: 5000px;
+}
+
+.project {
+    align-items: center; 
+    padding: 1rem;
+    background-color: white;
+    justify-content: center;
+}
+.project p {
+    font-weight: bold;
+    font-size: 14px;
+}
+#servicios {
+    padding: 3rem;
+    font-size: 1px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    line-height: 10px;
+    width: 90%;
+    text-align: center;
+}
+#servicios p {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 10px 25px;
+}
+.img__servicio{
+    padding: 10px 20px;
+    margin: 12px auto;
+}
+.contenedor-iconos {
+    background-color: white;
+    width: 60%;
+    gap: 0.3rem;
+    padding: 0.3rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0 auto;
 }
