@@ -6,23 +6,23 @@
     --dark-0: #495057;
     --dark-1: #343a40;
     --dark-2: #212529;
-    --color1: #F9F7F7;
-    --color2: #DBE2EF;
-    --color3: #3081df;;
+    --color1: #d0e1f4;
+    --color2: #a8bee8;
+    --color3: #3081df;
     --color4: #112D4E;
 }
 
 body {
-    background-color: var(--dark-2);
+    background-color: var(--dark-1);
     font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
     display: grid;
-    color: var(--color3);
+    color: var(--color2);
     transition: background 0.3s ease;
 }
 body.light {
     background-color: var(--light-0);
-    color: black;
+    color: var(--dark-1);
 }
 header {
     background-color: var(--dark-2);
@@ -49,6 +49,9 @@ header span {
 h2 {
     font-size: 38px;
 }
+
+
+/*-- switch dark/light --*/
 input {
     position: absolute;
     display: none;
@@ -77,6 +80,7 @@ label .sun-moon {
     transform: translateX(30px);
 }
 
+
 /*-- nav --*/
 nav {
     background-color: var(--color4);
@@ -95,10 +99,12 @@ nav.lightBG {
 }
 a {
     text-decoration: none;
-    color: var(--color1);
+    color: antiquewhite;
 }
+
+
 /*-- network --*/
-#network {
+#social-network {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,10 +117,14 @@ a {
     height: 30px;
     width: 30px;
 }
+
+
 /*-- about --*/
 #about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    line-height: 25px;
+    padding: 20px;
 }
 
 #manu-pic {
@@ -144,13 +154,44 @@ a {
 .right-column, .left-column {
     padding: 15px;
 }
-
 #manu-pic {
     max-width: 100%;
     height: auto;
 }
 
+/*-- stack --*/
+#stack {
+    margin-top: 5rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2.5rem;
+    border-radius: 20px;
+    padding: 10px 12px;
+}
 
+#stack img {
+    width: 80px;
+    height: auto;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: var(--color1);
+    border-radius: 30px;
+}
+
+/*-- projects --*/
+
+
+/*-- utilities --*/
+.box-shadow {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.zoom {
+    transition: transform .1s; 
+}
+.zoom:hover {
+    transform: scale(1.2); 
+}
 
 
 
