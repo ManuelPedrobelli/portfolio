@@ -1,72 +1,158 @@
-/* services section css */
-.servicesText.card {
-    height: 280px;
-    cursor: pointer;
-  }
-.servicesIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-}
-.card-title {
-    text-align: center;
-}
-.card:hover .servicesIcon {
-    color: #008000;
-}
-.servicesText:hover {
-    border: 1px solid #008000;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+:root {
+    --light-0: #f8f9fa;
+    --light-1: #d1d4d7;
+    --light-2: #dee2e6;
+    --dark-0: #495057;
+    --dark-1: #343a40;
+    --dark-2: #212529;
+    --color1: #F9F7F7;
+    --color2: #DBE2EF;
+    --color3: #3081df;;
+    --color4: #112D4E;
 }
 
-/* nav bar */
-.navbarScroll.navbarDark {
-    background-color: black;
+body {
+    background-color: var(--dark-2);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    display: grid;
+    color: var(--color3);
+    transition: background 0.3s ease;
 }
-.navbar {
-    background-color: #0d0b37;
+body.light {
+    background-color: var(--light-0);
+    color: black;
 }
-.navbar a {
-    color: white;
-}
-
-/* hero */
-/* hero background image */
-.bgimage {
-    height:100vh;
-    background: url('img/tareq-ajalyakin-72aEtYlS5K0-unsplash.jpg ');
-    background-size:cover;
-    position:relative;
-}
-/* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
-.hero-text {
+header {
+    background-color: var(--dark-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 98vh;
+    background-size: cover;
     text-align: center;
+}
+.lightBG {
+    background-color: var(--color1);
+}
+header h1 {
+    color:var(--color3);
+    font-size: 60px;
+}
+header span {
+    font-size: 20px;
+    color:var(--color3);
+    padding-bottom: 30px;
+}
+h2 {
+    font-size: 38px;
+}
+input {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    display: none;
+}
+label {
+    background: var(--dark-2);
+    border-radius: 20px;
+    cursor: pointer;
+    height: 38px;
+    position: relative;
+    width: 68px;
+}
+label .sun-moon {
+    background: var(--light-1);
+    border-radius: 50%;
+    height: 30px;
+    margin: 4px;
+    transition: transform 0.3s ease;
+    width: 30px;
+}
+#toggle-button:checked + label {
+    background: var(--light-2);
+}
+#toggle-button:checked + label .sun-moon {
+    background: var(--dark-2);
+    transform: translateX(30px);
 }
 
-.imageAboutPage {
+/*-- nav --*/
+nav {
+    background-color: var(--color4);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    position: fixed;
+    top: 0;
     width: 100%;
+    font-size: 15px;
+}
+nav.lightBG {
+    background-color: var(--color3);
+}
+a {
+    text-decoration: none;
+    color: var(--color1);
+}
+/*-- network --*/
+#network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color4);
+    padding: 10px 12px;
+    border-radius: 20px;
+}
+.icon {
+    height: 30px;
+    width: 30px;
+}
+/*-- about --*/
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-/* spacing on all sections */
-#about, #services, #portfolio, #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
+#manu-pic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
 }
-#contact {
-    padding-bottom: 4rem;
+/*-- container --*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
+    gap: 20px; 
+}
+.right-column, .left-column { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-column, .left-column {
+    padding: 15px;
 }
 
-footer {
-    background-color: #0d0b37;
-    padding-top: 30px ;
+#manu-pic {
+    max-width: 100%;
+    height: auto;
 }
+
+
+
+
+
+
+
