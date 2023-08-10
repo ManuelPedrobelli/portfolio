@@ -4,6 +4,6 @@ const nav = document.getElementById('nav');
 
 toggleButton.addEventListener('change', () => {
     document.body.classList.toggle('light');
-    banner.classList.toggle('lightBG');
-    nav.classList.toggle('lightBG')
+    banner.classList.toggle('headerLight');
+    nav.classList.toggle('navLight')
   });

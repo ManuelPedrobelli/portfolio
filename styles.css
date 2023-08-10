@@ -24,22 +24,32 @@ body.light {
     background-color: var(--light-0);
     color: var(--dark-1);
 }
+
+
+/*-- header --*/
 header {
     background-color: var(--dark-2);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    height: 98vh;
+    height: 100vh;
     background-size: cover;
     text-align: center;
 }
-.lightBG {
+.headerLight {
     background-color: var(--color1);
 }
+.headerLight h1 {
+    color: var(--color4);
+}
 header h1 {
-    color:var(--color3);
+    color:var(--color2);
     font-size: 60px;
+}
+header h3 {
+    font-weight: normal;
+    margin-bottom: 6rem;
 }
 header span {
     font-size: 20px;
@@ -48,6 +58,29 @@ header span {
 }
 h2 {
     font-size: 38px;
+}
+/*-- network --*/
+#social-network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color3);
+    padding: 0 10px;
+    border-radius: 20px;
+}
+#social-network p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.icon:hover {
+    transform: scale(1.1); 
+    color: var(--color4)
+}
+.icon {
+    transition: transform .1s; 
+    height: 40px;
+    width: 40px;
 }
 
 
@@ -94,8 +127,11 @@ nav {
     width: 100%;
     font-size: 15px;
 }
-nav.lightBG {
-    background-color: var(--color3);
+.navLight {
+    background-color: var(--color2);
+}
+.navLight a {
+    color: black;
 }
 a {
     text-decoration: none;
@@ -103,20 +139,6 @@ a {
 }
 
 
-/*-- network --*/
-#social-network {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    background-color: var(--color4);
-    padding: 10px 12px;
-    border-radius: 20px;
-}
-.icon {
-    height: 30px;
-    width: 30px;
-}
 
 
 /*-- about --*/
@@ -125,6 +147,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     line-height: 25px;
     padding: 20px;
+    margin: 7rem 0;
 }
 
 #manu-pic {
@@ -180,7 +203,35 @@ a {
 }
 
 /*-- projects --*/
-
+#projects {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+#trivia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    line-height: 25px;
+    margin-top: 3rem;
+}
+#trivia img {
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+#trivia p {
+    padding: 10px;
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*-- utilities --*/
 .box-shadow {
