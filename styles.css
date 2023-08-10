@@ -28,7 +28,7 @@ body.light {
 
 /*-- header --*/
 header {
-    background-color: var(--dark-2);
+    background-image: url(img/dark-geometric-background-with-copy-space.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +38,7 @@ header {
     text-align: center;
 }
 .headerLight {
-    background-color: var(--color1);
+    background-image: url(img/v1016-a-08.jpg);
 }
 .headerLight h1 {
     color: var(--color4);
@@ -66,7 +66,7 @@ h2 {
     align-items: center;
     gap: 1rem;
     background-color: var(--color3);
-    padding: 0 10px;
+    padding: 10px;
     border-radius: 20px;
 }
 #social-network p {
@@ -79,8 +79,8 @@ h2 {
 }
 .icon {
     transition: transform .1s; 
-    height: 40px;
-    width: 40px;
+    height: auto;
+    width: 30px;
 }
 
 
@@ -131,7 +131,7 @@ nav {
     background-color: var(--color2);
 }
 .navLight a {
-    color: black;
+    color: var(--dark-1);
 }
 a {
     text-decoration: none;
@@ -194,7 +194,7 @@ a {
 }
 
 #stack img {
-    width: 80px;
+    width: 50px;
     height: auto;
     padding: 1rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -211,18 +211,33 @@ a {
     margin-top: 7rem;
 }
 #trivia {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     line-height: 25px;
     margin-top: 3rem;
+    border: 2px solid var(--color3);
+    padding: 20px 10px;
+    border-radius: 20px;
 }
 #trivia img {
     width: 600px;
     height: auto;
     border-radius: 20px;
     padding: 10px;
+}
+#trivia-stack {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+#trivia-stack img {
+    width: 30px;
+    height: auto;
+    background-color: var(--color1);
 }
 #trivia p {
     padding: 10px;
@@ -233,6 +248,50 @@ a {
     align-items: center;
 }
 
+/*-- contact --*/
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+#contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+#contact p {
+    font-size: 25px;
+}
+#contact img {
+    width: 40px;
+    height: auto;
+}
+#contact a {
+    color: var(--dark-1);
+    padding: 10px;
+    border: solid 1px var(--color3);
+    width: 180px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: var(--color1);
+}
+#contact a:hover {
+    background-color: var(--color2);
+    color: var(--dark-2);
+}
+
 /*-- utilities --*/
 .box-shadow {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -241,10 +300,15 @@ a {
     transition: transform .1s; 
 }
 .zoom:hover {
-    transform: scale(1.2); 
+    transform: scale(1.1); 
 }
 
 
-
+/*-- footer --*/
+footer {
+    padding: 10px;
+    background-color: black;
+    text-align: center  ;
+}
 
 
