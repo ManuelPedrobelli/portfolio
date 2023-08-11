@@ -30,12 +30,18 @@ body.light {
 header {
     background-image: url(img/dark-geometric-background-with-copy-space.jpg);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items:center;
     height: 100vh;
     background-size: cover;
-    text-align: center;
+    text-align: left;
+    gap: 30px;
+}
+#header-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .headerLight {
     background-image: url(img/v1016-a-08.jpg);
@@ -56,6 +62,15 @@ header span {
     color:var(--color3);
     padding-bottom: 30px;
 }
+header img {
+    width: 300px;
+    height: auto;
+}
+header a {
+    position: absolute;
+    bottom: 5rem;
+    left: 35rem;
+}
 h2 {
     font-size: 38px;
 }
@@ -65,22 +80,22 @@ h2 {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    background-color: var(--color3);
-    padding: 10px;
-    border-radius: 20px;
 }
 #social-network p {
     font-weight: bold;
     font-size: 20px;
 }
 .icon:hover {
-    transform: scale(1.1); 
-    color: var(--color4)
+    transform: scale(1.2); 
 }
 .icon {
     transition: transform .1s; 
     height: auto;
     width: 30px;
+    color: var(--dark-0);
+}
+.blue-bg {
+    color: #3081df;
 }
 
 
@@ -120,7 +135,7 @@ nav {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 5rem;
     position: fixed;
     top: 0;
@@ -188,18 +203,18 @@ a {
     display: flex;
     align-items: start;
     justify-content: space-between;
-    gap: 2.5rem;
+    gap: 5rem;
     border-radius: 20px;
     padding: 10px 12px;
 }
 
-#stack img {
+#stack img, svg {
     width: 50px;
-    height: auto;
-    padding: 1rem;
+    height: 50px;
+    padding: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     background-color: var(--color1);
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 /*-- projects --*/
@@ -222,11 +237,16 @@ a {
     padding: 20px 10px;
     border-radius: 20px;
 }
-#trivia img {
+.trivia-img {
     width: 600px;
     height: auto;
     border-radius: 20px;
     padding: 10px;
+    transition: 0.3s;
+}
+.trivia-img:hover {
+    opacity: 0.3;
+    cursor:pointer;
 }
 #trivia-stack {
     display: flex;
@@ -235,9 +255,10 @@ a {
     gap: 10px;
 }
 #trivia-stack img {
-    width: 30px;
+    width: 40px;
     height: auto;
-    background-color: var(--color1);
+    border-radius: 10px;
+    padding: 10px;
 }
 #trivia p {
     padding: 10px;
@@ -266,20 +287,19 @@ a {
 }
 #contact p {
     font-size: 25px;
+    margin-bottom: 3.5rem;
 }
-#contact img {
-    width: 40px;
+.button img, svg {
+    width: 30px;
     height: auto;
 }
-#contact a {
+.button {
     color: var(--dark-1);
     padding: 10px;
     border: solid 1px var(--color3);
-    width: 180px;
-    height: 60px;
-    display: grid;
-    place-items: center;
-    font-size: 25px;
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,7 +307,7 @@ a {
     border-radius: 20px;
     background-color: var(--color1);
 }
-#contact a:hover {
+.button:hover {
     background-color: var(--color2);
     color: var(--dark-2);
 }
