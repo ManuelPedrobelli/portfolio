@@ -22,9 +22,9 @@
                 </svg>    
             </a>
         </div>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
         <input id="toggle-button" type="checkbox">
         <label for="toggle-button" class="box-shadow"> 
             <div class="sun-moon"></div>
@@ -35,7 +35,7 @@
             
             <h1>Manuel Pedrobelli</h1>
             <h3>Full-Stack developer who finds joy in building web apps. <br>Software Engineering student at UNLP University in Argentina.<br>I enjoy every aspect of web development, from user interface to the server logic.</h3>
-            <a class="button animate__animated animate__headShake">
+            <a class="button">
                 Resume <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
                     <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                     <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
@@ -46,7 +46,7 @@
     </header>
     <main class="container">
         <h2>About</h2>
-        <div id="about" class="grid-container">
+        <section id="about" class="grid-container">
             <div class="left-column">
                 <p>I am studying the second year of Software Engineer at UNLP.<br>
                  In my free time, I enjoy working on my side projects and try to refine my skills.<br>
@@ -55,7 +55,7 @@
             <div class="right-column">
                 <img id="manu-pic" class="box-shadow" src="img/pic.jpg" alt="Manu's Picture">
             </div>
-        </div>
+        </section>
         
         <h2>Stack</h2>
         <div id="stack">
@@ -69,14 +69,13 @@
             <img class="zoom box-shadow" src="img/git.png">
         </div>
         
-        <div id="projects">
+        <section id="projects">
             <h2>Projects</h2>
             <div id="trivia">
-                <a href="#">
+                <a href="https://github.com/ManuelPedrobelli/trivia">
                     <img class="trivia-img" src="img/trivia.png">
                 </a>
                 <div class="project-container">
-                    <h2>Trivia</h2>
                     <p>"Trivia" is a game developed for the university that features multiplayer connectivity.<br>The game involves rolling a dice to generate a number, selecting a square, and answering questions.<br>The player who reaches the destination square first becomes the winner.</p>
                     <div id="trivia-stack">
                         <img class="box-shadow zoom" src="img/html-5.png">
@@ -88,15 +87,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="contact">
+        <section id="contact">
             <h2>Reach me</h2>
             <p>I'm currently looking for opportunities.<br> Send me a message, i'll try to get back to you as soon as possible.</p>
                 <a class="button" href="mailto:manupedrob@gmail.com">
                     Get in touch<img src="img/email.webp">
                 </a>
-        </div>
+        </section>
         
     </main>
     <footer>Manuel Pedrobelli</footer>
